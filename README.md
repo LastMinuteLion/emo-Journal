@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# EmoJournal
 
-## Getting Started
+## Overview
 
-First, run the development server:
+EmoJournal is a web application designed to help users track their daily moods and improve their mental health. By recording daily emotions, users can gain insights into their emotional patterns and make informed decisions to enhance their well-being.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **User Authentication**: Secure login and registration using Firebase Authentication.
+- **Mood Tracking**: Users can log their daily moods and view historical data.
+- **Calendar View**: Visual representation of mood entries over time.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Loading Indicators**: Provides feedback during data fetching and processing.
+- **Gradient Mood Visualization**: Displays mood data using gradient colors for easy interpretation.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Components
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Main**: The main layout component that wraps other components.
+- **Dashboard**: Displays user mood data and allows mood entry.
+- **Login**: Handles user authentication.
+- **Loading**: Shows a loading spinner during data fetching.
+- **Calendar**: Displays mood data in a calendar format.
+- **Hero**: The landing page component with a call to action.
+- **Button**: Reusable button component with customizable styles.
 
-## Learn More
+## Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+- **React**: JavaScript library for building user interfaces.
+- **Next.js**: React framework for server-side rendering and static site generation.
+- **Firebase**: Backend-as-a-service for authentication and database.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Google Fonts**: Custom fonts for enhanced typography.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **Clone the Repository**: 
+   ```bash
+   git clone https://github.com/yourusername/emojournal.git
+   cd emojournal
+   ```
 
-## Deploy on Vercel
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Set Up Firebase**:
+   - Create a Firebase project and configure authentication and Firestore.
+   - Set up environment variables in a `.env.local` file with your Firebase configuration.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. **Run the Application**:
+   ```bash
+   npm run dev
+   ```
+
+5. **Access the Application**:
+   - Open your browser and navigate to `http://localhost:3000`.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request. Ensure your code follows the project's coding standards and includes appropriate tests.
+
+1. **Fork the Repository**: Click the "Fork" button on the top right of the repository page.
+
+2. **Create a Branch**: 
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+
+4. **Push to the Branch**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. **Open a Pull Request**: Navigate to the repository on GitHub and click the "New Pull Request" button.
+
+---
+
+Thank you for using EmoJournal! We hope it helps you track and improve your emotional well-being.
